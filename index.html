@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="assets/icon-elis.svg" type="image/x-icon">
     <link rel="icon" href="assets/icon-elis.svg" type="image/x-icon" />
   </head>
-  <body>
+  <body class="bg-[#FFFBEE]">
     <nav
       class="w-full px-8 py-4 bg-[#FFFBEE] relative flex items-center justify-between"
     >
@@ -333,73 +333,167 @@ Membro titular da Sociedade Brasileira de Alergia e Imunologia, mantém-se sempr
 
         <!-- Texto -->
         <div class="md:w-2/3 text-white relative">
-          <h2 class="text-3xl md:text-7xl font-bold !leading-tight mb-6">
-            Um pouco mais<br />
-           sobre meu
-            <span class="bg-[#FFA726] rounded text-white">atendimento</span>
+          <h2 class="text-3xl md:text-5xl font-bold !leading-tight mb-6">
+            Comece hoje mesmo<br />
+            a transformação da
+            <span class="bg-[#FFA726] rounded text-white">sua saúde.</span>
           </h2>
           <img
             src="assets/saibamais.png"
-            class="absolute right-24 top-[6rem]"
+            class="absolute right-32 top-[3rem] hidden md:block"
             alt=""
           />
           <p class="text-md md:text-lg leading-relaxed">
-Meu cuidado é sobre acolhimento, atenção e dedicação em cada detalhe. Cada paciente é único e merece um cuidado especial e integral.
+            Agende sua consulta e descubra como é possível viver sem as limitações das alergias.
           </p>
+          <div class="py-10">
+            <a
+              href="#contato"
+              class="bg-[#383690] text-white text-2xl font-bold px-6 py-2 items-center mx-auto rounded-full"
+            >
+              Agendar consulta
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-[#FFF9F0] py-16">
-      <div class="container mx-auto px-4">
-        <div class="grid gap-8 md:grid-cols-2">
-          <!-- Card 1 -->
-          <div class="bg-white rounded-lg shadow-md p-6">
-            <div class="flex items-center gap-4 mb-4">
-              <div class="md:w-24 md:h-24 w-10 h-10 rounded-full bg-purple-700"></div>
-              <div>
-                <h3 class="md:text-4xl font-bold mb-1">Dalila Viviane</h3>
-                <div class="flex">
-                  <span class="text-yellow-400 md:text-4xl">★</span>
-                  <span class="text-yellow-400 md:text-4xl">★</span>
-                  <span class="text-yellow-400 md:text-4xl">★</span>
-                  <span class="text-yellow-400 md:text-4xl">★</span>
-                  <span class="text-yellow-400 md:text-4xl">★</span>
+    <section class="p-8 inset-x-0 md:p-14 relative">
+      <div class="mx-auto max-w-6xl relative overflow-hidden">
+          <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+              <div class="flex flex-col md:flex-row items-center md:items-start min-w-full">
+                  <div class="md:w-1/2 text-gray-800 space-y-6 md:space-y-8 p-4 md:p-8">
+                      <div class="flex items-center justify-between">
+                          <p class="inline-block rounded-full border border-gray-800 uppercase px-4 py-1 text-sm">DEPOIMENTOS</p>
+                          
+                      </div>
+                      <div>
+                          <h2 class="text-4xl md:text-4xl font-bold leading-tight">
+                              <span class="italic md:text-6xl aventa">Transformando</span><br>
+                              vidas através da cirurgia plástica.
+                          </h2>
+                      </div>
+                      <img src="assets/depoimento01.webp" class="md:hidden mx-auto" />
+                      <!-- <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                          “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac molestie dui. Suspendisse potenti. Aliquam a urna quis mauris finibus pellentesque nec sed massa.”
+                      </p> -->
+                      <div>
+                          <p class="font-bold text-lg">Roberta Fagundes</p>
+                          <p class="text-sm text-gray-600">Paciente</p>
+                      </div>
+                  </div>
+  
+                  <div class="md:w-1/2 md:relative flex justify-center md:justify-end mt-8 md:mt-0">
+                      <img src="assets/depoimento01.webp" alt="Foto do Paciente" class="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto object-cover hidden md:block">
+                      <button class="absolute inset-0 md:left-32 flex items-center justify-center" onclick="instaopenPopup1()">
+                          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-gray-100 transition-all duration-300">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8 text-black">
+                                  <path d="M8 5v14l11-7z"/>
+                              </svg>
+                          </div>
+                      </button>
+                  </div>
+              </div>
+  
+              <div class="flex flex-col md:flex-row items-center md:items-start min-w-full">
+                  <div class="md:w-1/2 text-gray-800 space-y-6 md:space-y-8 p-4 md:p-8">
+                      <div class="flex items-center justify-between">
+                          <p class="inline-block rounded-full border border-gray-800 uppercase px-4 py-1 text-sm">DEPOIMENTOS</p>
+                      </div>
+                      <div>
+                          <h2 class="text-4xl md:text-4xl font-bold leading-tight">
+                              <span class="italic md:text-6xl aventa">Histórias de Sucesso</span><br>
+                              Impactando vidas positivamente.
+                          </h2>
+                      </div>
+                      <div class="md:w-1/2 relative flex justify-center md:justify-end mt-8 md:mt-0">
+                          <img src="assets/depoimento02.webp" class="md:hidden mx-auto" />
+                          <button class="absolute inset-0 md:left-32 flex items-center justify-center" onclick="instaopenPopup2()">
+                              <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-gray-100 transition-all duration-300 md:hidden block">
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8 text-black">
+                                      <path d="M8 5v14l11-7z"/>
+                                  </svg>
+                              </div>
+                          </button>
+                      </div>
+                      <!-- <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                          “Sed nisl lacus, blandit finibus tempus vitae, laoreet eu mi. Nullam mattis eros eget facilisis molestie.”
+                      </p> -->
+                      <div>
+                          <p class="font-bold text-lg">Helen Cristina</p>
+                          <p class="text-sm text-gray-600">Paciente</p>
+                      </div>
+                  </div>
+  <!--popup da primeria imagem-->
+                  <div class="md:w-1/2 md:relative flex justify-center md:justify-end md:mt-8 md:mt-0">
+                      <img src="assets/depoimento02.webp" alt="Foto do Paciente 2" class="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto object-cover hidden md:block">
+                      <button class="absolute inset-0 md:left-32 flex items-center justify-center hidden md:hidden" onclick="instaopenPopup1()">
+                      <button class="absolute inset-0 md:left-80 flex items-center justify-center hidden md:block" onclick="instaopenPopup2()">
+                          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-gray-100 transition-all duration-300">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8 text-black">
+                                  <path d="M8 5v14l11-7z"/>
+                              </svg>
+                          </div>
+                      </button>
+                  </div>
+              </div>
+          </div>
+  
+          
+          <div id="instapopup1" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50">
+              <div class="relative bg-white p-4 max-w-sm">
+                  <button 
+                      class="absolute top-4 right-4 text-gray-600 hover:text-black text-2xl z-10" 
+                      onclick="instaclosePopup1()">✖</button>
+                  <div class="aspect-w-16 aspect-h-9">
+  
+                      <iframe 
+                      class="w-[640px] h-[360px] sm:w-[854px] sm:h-[480px] md:w-[1280px] md:h-[520px] max-w-full max-h-full"
+                      src="https://player.vimeo.com/video/1034515296?h=5abd8aa275&badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0" 
+                      frameborder="0" 
+                      allow="autoplay; fullscreen; picture-in-picture" 
+                      allowfullscreen 
+                      title="Vídeo da paciente Roberta">
+                  </iframe>
+                  
+                  </div>
+              </div>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+  
+            <div id="instapopup2" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50">
+              <div class="relative bg-white p-4 max-w-sm ">
+                <button 
+                  class="absolute top-2 right-2 text-gray-600 hover:text-black" 
+                  onclick="instaclosePopup2()">✖</button>
+                
+                <div class="aspect-w-16 aspect-h-9">
+                  
+                  <iframe 
+                  class="w-[640px] h-[360px] sm:w-[854px] sm:h-[480px] md:w-[1280px] md:h-[520px] max-w-full max-h-full" 
+                  src="https://player.vimeo.com/video/1034534539?h=64747c836e&badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0" 
+                  frameborder="0" 
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+                  title="Depoimento - Helen Cristina">
+              </iframe>
+              
+  
                 </div>
               </div>
             </div>
-            <p class="text-gray-700 md:text-xl !leading-relaxed text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              pulvinar accumsan cursus. In tellus erat, interdum eget luctus sit
-              amet, fringilla in ex. Vivamus sapien lectus
-            </p>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="bg-white rounded-lg shadow-md p-6">
-            <div class="flex items-center gap-4 mb-4">
-              <div class="md:w-24 md:h-24 w-10 h-10 rounded-full bg-orange-400"></div>
-              <div>
-                <h3 class="md:text-4xl font-bold mb-1">Magna Ranielle</h3>
-                <div class="flex">
-                  <span class="text-yellow-400 md:text-4xl">★</span>
-                  <span class="text-yellow-400 md:text-4xl">★</span>
-                  <span class="text-yellow-400 md:text-4xl">★</span>
-                  <span class="text-yellow-400 md:text-4xl">★</span>
-                  <span class="text-yellow-400 md:text-4xl">★</span>
-                </div>
-              </div>
-            </div>
-            <p class="text-gray-700 md:text-xl leading-relaxed text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar accumsan cursus. 
-              In tellus erat, interdum eget luctus sit amet, fringilla in ex. Vivamus sapien lectus
-            </p>
-          </div>
-    
-        </div>
-        </div>
+            
       </div>
-    </section>
+          
+      </div>
+      <button id="prev" class="hidden md:block absolute top-1/2 left-10 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-md">←</button>
+          <button id="next" class="hidden md:block absolute top-1/2 right-10 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-md">→</button>
+  </section>
 
     
 
@@ -415,44 +509,15 @@ Meu cuidado é sobre acolhimento, atenção e dedicação em cada detalhe. Cada 
               </a>
             </div>
             
-            <!-- Links -->
-            <div class="grid grid-cols-2 gap-8 sm:gap-12 sm:grid-cols-2 text-center md:text-left">
-              
-              <div>
-                <h2 class="mb-6 text-sm font-semibold text-black uppercase">Doutora</h2>
-                <ul class="text-black space-y-3">
-                  <li>
-                    <a href="/" class="hover:underline">Sobre</a>
-                  </li>
-                  <li>
-                    <a href="/" class="hover:underline">Especialidade</a>
-                  </li>
-                  <li>
-                    <a href="/" class="hover:underline">Qualificações</a>
-                  </li>
-                </ul>
-              </div>
-      
-              <div>
-                <h2 class="mb-6 text-sm font-semibold text-black uppercase">Contato</h2>
-                <ul class="text-black space-y-3">
-                  <li>
-                    <a href="/" class="hover:underline">WhatsApp</a>
-                  </li>
-                  <li>
-                    <a href="/" class="hover:underline">Instagram</a>
-                  </li>
-                </ul>
-              </div>
-      
-            </div>
+
       
           </div>
       
           <hr class="my-8 border-gray-300" />
       
           <div class="flex flex-col sm:flex-row items-center justify-between text-sm text-black text-center">
-            <span>© 2025 <a href="/" class="hover:underline font-semibold">Bmouse Productions</a>. Todos os direitos reservados.</span>
+            <span>© 2025 <a href="/" class="hover:underline font-semibold">Dra. Elisângela Menezes</a>. Todos os direitos reservados.
+              Criado por: BMouse</span>
           </div>
       
         </div>
@@ -495,5 +560,53 @@ Meu cuidado é sobre acolhimento, atenção e dedicação em cada detalhe. Cada 
         updateCount();
       });
     </script>
+    <script>
+      function instaopenPopup1() {
+    document.getElementById('instapopup1').classList.remove('hidden');
+  }
+  
+  function instaclosePopup1() {
+    document.getElementById('instapopup1').classList.add('hidden');
+  }
+  
+  function instaopenPopup2() {
+    document.getElementById('instapopup2').classList.remove('hidden');
+  }
+  
+  function instaclosePopup2() {
+    document.getElementById('instapopup2').classList.add('hidden');
+  }
+  
+  </script>
+  <script>
+    const carousel = document.getElementById('carousel');
+    const next = document.getElementById('next');
+    const prev = document.getElementById('prev');
+
+    let index = 0;
+
+    // Função para atualizar o carrossel com base no índice
+    const updateCarousel = () => {
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+    };
+
+    // Evento de clique para o botão 'next'
+    next.addEventListener('click', () => {
+        index = (index + 1) % 2; // Alterne entre os dois slides
+        updateCarousel();
+    });
+
+    // Evento de clique para o botão 'prev'
+    prev.addEventListener('click', () => {
+        index = (index - 1 + 2) % 2;
+        updateCarousel();
+    });
+
+    // Autoplay com intervalo de 2 segundos (2000 milissegundos)
+    setInterval(() => {
+        index = (index + 1) % 2; // Alterne entre os dois slides
+        updateCarousel();
+    }, 5000);
+</script>
   </body>
 </html>

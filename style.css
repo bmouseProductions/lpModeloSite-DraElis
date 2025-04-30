@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Aventa";
+  src: url("./fonts/aventa/Aventa-LightPERSONALUSEONLY.otf");
+}
+
+.aventa {
+  font-family: "Aventa", sans-serif;
+}

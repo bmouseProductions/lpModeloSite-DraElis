@@ -801,6 +801,12 @@ Bacharel em Medicina e em Ciências Biológicas - Bioquímica e Imunologia pela 
     <script>
       const swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
+         grabCursor: true,
+    freeMode: true,
+         autoplay: {
+      delay: 3000, // 3 segundos entre cada slide
+      disableOnInteraction: false, // continua rodando mesmo após interação
+    },
         spaceBetween: 20,
         breakpoints: {
           640: {

@@ -11,26 +11,52 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="bg-[#FFFBEE]">
-     <nav
-      class="w-full px-8 py-4 bg-[#FFFBEE] relative flex items-center justify-between"
-    >
-      <div class="flex items-center">
-        <img src="assets/logo-elis-horizontal.svg" alt="Logo" class="h-6" />
-      </div>
+<nav class="w-full px-6 py-4 bg-[#FFFBEE] flex items-center justify-between relative z-50">
+  <!-- Logo -->
+  <div class="flex items-center">
+    <img src="assets/logo-elis-horizontal.svg" alt="Logo" class="h-6" />
+  </div>
 
-     
+  <!-- Menu desktop -->
+  <ul class="hidden md:flex items-center gap-6 aventa text-sm text-gray-800">
+    <li><a href="#sobre" class="hover:text-[#7A4BCE] transition">Sobre</a></li>
+    <li><a href="#alergias" class="hover:text-[#7A4BCE] transition">Alergias Tratadas</a></li>
+    <li><a href="#imunoterapia" class="hover:text-[#7A4BCE] transition">Imunoterapia</a></li>
+    <li><a href="#depoimentos" class="hover:text-[#7A4BCE] transition">Depoimentos</a></li>
+    <li>
+      <a
+        href="https://wa.me/5534999353532?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Elis%C3%A2ngela%20Menezes"
+        class="bg-[#9e80d3] text-white px-5 py-2 rounded-full"
+      >
+        Contato
+      </a>
+    </li>
+  </ul>
 
-      
+  <!-- Botão do menu mobile -->
+  <button id="menu-toggle" class="md:hidden text-[#7A4BCE] text-2xl focus:outline-none">
+    ☰
+  </button>
 
-      <div class="hidden md:block">
+  <!-- Menu mobile -->
+  <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-[#FFFBEE] py-6 px-6 shadow-md md:hidden">
+    <ul class="flex flex-col gap-4 aventa text-sm text-gray-800">
+      <li><a href="#sobre" class="block hover:text-[#7A4BCE]">Sobre</a></li>
+      <li><a href="#alergias" class="block hover:text-[#7A4BCE]">Alergias Tratadas</a></li>
+      <li><a href="#imunoterapia" class="block hover:text-[#7A4BCE]">Imunoterapia</a></li>
+      <li><a href="#depoimentos" class="block hover:text-[#7A4BCE]">Depoimentos</a></li>
+      <li><a href="#contato" class="block hover:text-[#7A4BCE]">Contato</a></li>
+      <li>
         <a
           href="https://wa.me/5534999353532?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Elis%C3%A2ngela%20Menezes"
-          class="bg-[#9e80d3] text-white px-6 py-2 rounded-full aventa"
+          class="inline-block bg-[#9e80d3] text-white text-center px-5 py-2 rounded-full"
         >
           Contato
         </a>
-      </div>
-    </nav> 
+      </li>
+    </ul>
+  </div>
+</nav>
     <header
       class="relative w-full px-8 py-16 bg-[#FFFBEE] md:h-[32rem] overflow-hidden"
     >
@@ -121,7 +147,7 @@ Combata as alergias em qualquer idade com um tratamento eficaz, feito para você
       </div>
     </section>
 
-    <section class="relative py-20 px-6 bg-[#FFFBEE]">
+    <section class="relative py-20 px-6 bg-[#FFFBEE]" id="sobre">
       <div
         class="container mx-auto flex flex-col md:flex-row items-center justify-around gap-10"
       >
@@ -137,12 +163,12 @@ Combata as alergias em qualquer idade com um tratamento eficaz, feito para você
           </h2>
           <div class="space-y-10 py-5">
             <p class="text-lg md:max-w-lg aventa">
-              Referência em Pediatria, Alergia e Imunologia, a Dra. Elisângela Menezes possui uma trajetória acadêmica e profissional de excelência. 
-Bacharel em Medicina e em Ciências Biológicas - Bioquímica e Imunologia pela UFMG. Pediatra com residência médica pelo Hospital das Clínicas da UFMG, especializou-se em Alergia e Imunologia Clínica pela Faculdade de Ciências Médicas e da Saúde de Juiz de Fora - MG. 
+              Referência em Alergia e Imunologia, a Dra. Elisângela Menezes alia excelência acadêmica a uma prática clínica humanizada.
             </p>
-            <p class="text-lg md:max-w-lg aventa">Membro titular da Sociedade Brasileira de Alergia e Imunologia, mantém-se sempre atualizada nas melhores práticas da área, e possui mais de 20 anos de experiência no ensino em Medicina e saúde. </p>
+            <p class="text-lg md:max-w-lg aventa">Médica formada pela UFMG, considerada uma das melhores universidades do Brasil e do mundo, com dupla graduação em Medicina e Ciências Biológicas – Bioquímica e Imunologia. É também pediatra com residência médica no Hospital das Clínicas da UFMG e especialista em Alergia e Imunologia Clínica pela FCMS/JF.
+</p>
             <p class="text-lg md:max-w-lg aventa">
-              Seu compromisso é oferecer um atendimento humanizado, com diagnósticos precisos e tratamentos eficazes para crianças e adultos na área de alergia, priorizando a qualidade de vida de seus pacientes.
+             Membro titular da Sociedade Brasileira de Alergia e Imunologia, atua com foco em diagnósticos precisos e tratamentos eficazes com imunoterapia, cuidando de crianças e adultos com empatia, atualização constante e compromisso com a qualidade de vida.
             </p>
             
           </div>
@@ -182,7 +208,7 @@ Bacharel em Medicina e em Ciências Biológicas - Bioquímica e Imunologia pela 
               0
             </h2>
             <p class="text-sm uppercase mt-2 tracking-widest aventa">
-              mil pacientes atendidos
+              pacientes atendidos
             </p>
           </div>
 
@@ -193,11 +219,11 @@ Bacharel em Medicina e em Ciências Biológicas - Bioquímica e Imunologia pela 
             <h2
               class="text-5xl font-bold counter"
               data-target="15"
-              data-suffix="+"
+              data-suffix="5"
             >
               0
             </h2>
-            <p class="text-sm uppercase mt-2 tracking-widest aventa">mil consultas realizadas</p>
+            <p class="text-sm uppercase mt-2 tracking-widest aventa">consultas realizadas</p>
           </div>
         </div>
       </div>
@@ -253,7 +279,7 @@ Bacharel em Medicina e em Ciências Biológicas - Bioquímica e Imunologia pela 
     </div>
 
 
-    <section class="text-center p-10">
+    <section class="text-center p-10" id="alergias">
       <h1 class="text-4xl font-bold text-[#6D3399] mb-10">Alergias tratadas</h1>
 
       <div class="swiper mySwiper">
@@ -373,7 +399,7 @@ Bacharel em Medicina e em Ciências Biológicas - Bioquímica e Imunologia pela 
       </div>
     </section>
 
-<section class="py-20  text-gray-800">
+<section class="py-20  text-gray-800" id="imunoterapia">
   <div class="max-w-6xl mx-auto px-4">
     <!-- Título principal -->
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">
@@ -460,7 +486,7 @@ Bacharel em Medicina e em Ciências Biológicas - Bioquímica e Imunologia pela 
 
 
 
-    <section class="p-8 inset-x-0 md:p-14 relative">
+    <section class="p-8 inset-x-0 md:p-14 relative" id="depoimentos">
       <div class="mx-auto max-w-6xl relative overflow-hidden">
           <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
               <div class="flex flex-col md:flex-row items-center md:items-start min-w-full">
@@ -873,5 +899,12 @@ Bacharel em Medicina e em Ciências Biológicas - Bioquímica e Imunologia pela 
         },
       });
     </script>
+    <script>
+  const toggle2 = document.getElementById('menu-toggle');
+  const menu2 = document.getElementById('mobile-menu');
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
   </body>
 </html>

@@ -153,8 +153,11 @@ Combata as alergias em qualquer idade com um tratamento eficaz, feito para você
         <div
           class="relative rounded-lg flex items-center justify-center md:w-1/2"
         >
-          <img src="assets/elis.png" alt="" />
+          <img src="assets/elis.png" class="hidden md:block" alt="" />
+          <img src="assets/elis-mobile.png" class="md:hidden" alt="" />
+
         </div>
+        
         <div class="md:w-1/2">
           <h2 class="lg:text-6xl text-5xl text-[#6D3399] font-bold pb-10 py-12 aventa">
             Quem é a Dra.<br />
@@ -353,6 +356,8 @@ Combata as alergias em qualquer idade com um tratamento eficaz, feito para você
             <p class="text-gray-500 text-sm">Condição inflamatória da pele que pode ser desencadeada por alérgenos ambientais ou alimentares.</p>
           </div>
         </div>
+          <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
       </div>
     </section>
     
@@ -874,30 +879,35 @@ Combata as alergias em qualquer idade com um tratamento eficaz, feito para você
     }
   });
 </script>
-    <script>
-      const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-         grabCursor: true,
+<script>
+  const isMobile = window.innerWidth < 640;
+
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    grabCursor: true,
     freeMode: true,
-         autoplay: {
-      delay: 3000, // 3 segundos entre cada slide
-      disableOnInteraction: false, // continua rodando mesmo após interação
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
     },
-        spaceBetween: 20,
-        breakpoints: {
-          640: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 4,
-          },
-        },
-        navigation: {
+    spaceBetween: 20,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+    },
+    navigation: isMobile
+      ? {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+        }
+      : false,
+  });
+</script>
+
 <script>
   const navToggleBtn = document.getElementById('navToggleBtn');
   const navMobileMenu = document.getElementById('navMobileMenu');

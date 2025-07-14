@@ -17,3 +17,31 @@ html {
     display: none !important;
   }
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #4b5563; /* cinza escuro (Tailwind: gray-700) */
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px; /* diminui o ícone da seta */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: auto;
+  bottom: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  border-radius: 9999px; /* totalmente arredondado */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
